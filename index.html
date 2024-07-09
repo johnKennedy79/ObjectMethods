@@ -4,10 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object Methods</title>
-    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/app.js" defer></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/hero.js"></script>
   </head>
   <body>
     <h1>Object Methods</h1>
-    <h2>See Terminal Console</h2>
+    <div class="header">
+      <h2>Choose your hero!</h2>
+    </div>
+    <div class="player">
+      <a href="#" onclick="game.setgamestart(`wollivan`)">
+        <img src="img/sir_wollivan.jpg" />
+        <div>
+          <h3>Sir Wollivan</h3>
+          <p>Sir Wollivan has good endurance.</p>
+        </div>
+      </a>
+
+      <a href="#" onclick="game.setgamestart(`johns`)">
+        <img src="img/sir_johns.jpg" />
+        <div>
+          <h3>Sir Johns</h3>
+          <p>Sir Johns has a strong attack.</p>
+        </div>
+      </a>
+    </div>
+    <div class="action"></div>
+    <div class="arena"></div>
+    <div class="enemy"></div>
   </body>
 </html>

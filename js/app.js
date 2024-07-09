@@ -30,3 +30,30 @@ const book = {
 };
 
 console.table(book);
+
+//game
+
+const warrior = {
+  Name: "Warrior",
+  Attack: 65,
+  Defence: 210,
+  Health: 500,
+  warriorattack: function () {
+    ork.Health = ork.Health - warrior.Attack - ork.Defence;
+    return ork.Health;
+  },
+};
+
+const ork = {
+  Name: "Ork",
+  Attack: 48,
+  Defence: 130,
+  Health: 480,
+  orkattack: function () {
+    warrior.Health = warrior.Health - ork.Attack - warrior.Defence;
+    return warrior.Health;
+  },
+};
+
+warrior.warriorattack();
+console.log(ork.Health); //285 480-65-130
